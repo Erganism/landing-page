@@ -31,23 +31,25 @@ export default {
     let light
 
     const gltfLoader = new GLTFLoader()
-    gltfLoader.load('/assets/gem/gem.gltf', (gltf) => {
+    gltfLoader.load('/assets/gem/monkey.glb', (gltf) => {
       // Gem
-      gem = gltf.scene.children[6]
-
+      gem = gltf.scene.children[0]
       // Material setup
       // const textureLoader = new THREE.TextureLoader()
       // const roughnessTexture = textureLoader.load('/assets/gem/roughness.jpeg')
       // gem.material.roughnessMap = roughnessTexture
-      gem.material.displacementScale = 0.15
+      gem.material.displacementScale = 1
       gem.material.emissiveIntensity = 0.4
       gem.material.refractionRatio = 1
-      gem.rotation.z = 0
+      gem.rotation.z = 1
       // change color
-      scene.add(gem)
 
-      light = gltf.scene.children[0]
-      scene.add(light)
+      gem.scale.x = 2
+      gem.scale.y = 2
+      gem.scale.z = 2
+      scene.add(gem)
+      // light = gltf.scene.children[0]
+      // scene.add(light)
       this.ready = true
     })
 
