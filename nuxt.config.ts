@@ -43,9 +43,9 @@ export default defineNuxtConfig({
 
   // vite plugins
   vite: {
-      resolve: {
-        dedupe: ['vue-router']
-      },
+    resolve: {
+      dedupe: ['vue-router'],
+    },
     plugins: [
       UnpluginComponentsVite({
         dts: true,
@@ -108,9 +108,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       // routes: ['/sitemap.xml'],
-      ignore: [
-        '/ignore/',
-      ]
-    }
-  }
+      ignore: ['/ignore/'],
+    },
+  },
 })

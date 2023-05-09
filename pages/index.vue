@@ -49,16 +49,16 @@ const copyBash = () => {
 <template>
   <PageWrapper class="flex-1 flex">
     <div class="background-overlay">
-      <div
-        class="absolute top-0 left-0 transform translate-x-64 translate-y-4 h-14 w-14 rounded-full bg-gray-900 dark:bg-white"
+      <!-- <div
+        class="absolute top-0 left-0 transform translate-x-64 translate-y-4 h-14 w-14 rounded bg-gray-900 dark:bg-white"
       ></div>
       <div
-        class="absolute hidden md:block top-0 left-0 transform translate-x-18 translate-y-20 h-28 w-28 rounded-full bg-blue-600 linear-wipe"
-      ></div>
+        class="absolute hidden lg:block top-0 left-0 transform translate-x-18 translate-y-20 h-28 w-28 rounded bg-blue-600 linear-wipe"
+      ></div> -->
       <div
         class="absolute hidden md:block bottom-0 right-0 transform -translate-x-4 -translate-y-40 h-16 w-16 rounded bg-purple-600 linear-wipe"
       ></div>
-      <div class="absolute bottom-0 right-0 triangle-shape"></div>
+      <!-- <div class="absolute bottom-0 right-0 triangle-shape"></div> -->
     </div>
     <PageBody class="flex-1 flex">
       <PageSection class="flex-1 flex items-center">
@@ -81,9 +81,10 @@ const copyBash = () => {
             class="flex space-x-4 ml-4 mt-10 justify-center md:justify-start"
           >
             <Button
-              size="lg"
+              size="sm"
               class="font-extrabold"
-              type="secondary"
+              type="primary"
+              target="_blank"
               href="https://discord.gg/WW6unQmyxD"
             >
               <IconMdi:discord class="mr-2" /> Join us on Discord</Button
@@ -91,7 +92,23 @@ const copyBash = () => {
           </div>
         </div>
         <div class="hidden md:flex md:w-3/8 justify-center items-end relative">
-          <Gem class="absolute -top-64 -right-0" />
+          <BrandLogoColor
+            class="absolute hidden xl:block -top-64 right-0"
+            :height="600"
+            :width="600"
+          />
+          <BrandLogoColor
+            class="absolute hidden lg:block xl:hidden -top-64 right-0"
+            :height="500"
+            :width="500"
+          />
+
+          <BrandLogoColor
+            class="absolute lg:hidden -top-24 right-24"
+            :height="200"
+            :width="200"
+          />
+          <Gem class="absolute hidden lg:block  -top-64 right-12" />
         </div>
       </PageSection>
     </PageBody>

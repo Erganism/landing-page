@@ -53,6 +53,31 @@ const MyTheme = {
       '800': '#BB0000',
       '900': '#830000',
     },
+    gray: {
+      DEFAULT: '#1D303E',
+
+      400: '#375A76',
+      500: '#315068',
+      600: '#2A455A',
+      700: '#243A4C',
+      800: '#0A111F',
+      900: '#010409',
+      950: '#000205',
+    },
+    slate: {
+      DEFAULT: '#6b7280',
+      '50': '#f5f5f6',
+      '100': '#e4e5e9',
+      '200': '#cccfd5',
+      '300': '#a9aeb7',
+      '400': '#7e8592',
+      '500': '#6b7280',
+      '600': '#525866',
+      '700': '#444a5a',
+      '800': '#3a3e50',
+      '900': '#323548',
+      '950': '#1c1f31',
+    },
   },
 }
 
@@ -83,12 +108,13 @@ export default defineConfig({
         green: MyTheme.colors.green,
         blue: MyTheme.colors.blue,
         red: MyTheme.colors.red,
-        slate: colors.slate,
+        gray: MyTheme.colors.gray,
+        // slate: MyTheme.colors.slate,
       },
       fontFamily: {
         // sans: ['Rubik', ...defaultTheme.fontFamily.sans],
         sans: ['Mulish', ...defaultTheme.fontFamily.sans],
-      }
+      },
     },
   },
   shortcuts: {

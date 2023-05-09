@@ -1,3 +1,8 @@
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f2f98a8c-e026-4754-bf37-97e8c5eba1f4/deploy-status)](https://app.netlify.com/sites/magnificent-haupia-a8d578/deploys)
+
+
+
 # Nuxt 3 Awesome Starter
 a Nuxt 3 starter template or boilerplate with a lot of useful features. and integrated with TailwindCSS 3.  
 

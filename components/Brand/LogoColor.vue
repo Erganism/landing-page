@@ -1,7 +1,21 @@
+<script>
+export default {
+  props: {
+    height: {
+      type: Number,
+      default: 410,
+    },
+    width: {
+      type: Number,
+      default: 398,
+    },
+  },
+}
+</script>
 <template>
   <svg
-    width="398"
-    height="410"
+    :width="width"
+    :height="height"
     viewBox="0 0 398 410"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

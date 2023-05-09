@@ -76,20 +76,21 @@ const menus = computed((): IMenuItem[] => [
           <!-- <LanguageSwitcher /> -->
           <ThemeSwitcher />
           <Anchor
-            class="hover:no-underline hover:text-slate-900 hover:dark:text-white text-lg flex self-center items-center"
+            class="hover:no-underline hover:text-slate-900 hover:dark:text-primary-100 dark:text-purple-300 text-lg flex self-center items-center"
             href="https://github.com/Erganism"
             title="Github"
+            target="_blank"
           >
             <IconMdi:github-face />
           </Anchor>
           <Anchor
-            class="hover:no-underline hover:text-slate-900 hover:dark:text-white text-lg flex self-center items-center"
+            class="hover:no-underline hover:text-slate-900 hover:dark:text-primary-100 dark:text-purple-300 text-lg flex self-center items-center"
             href="https://twitter.com/erganism"
             title="Twitter"
+            target="_blank"
           >
             <IconMdi:twitter />
           </Anchor>
-          
         </div>
       </div>
     </template>
