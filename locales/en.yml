@@ -6,7 +6,7 @@ components:
     change_theme: change theme
 pages:
   index:
-    title: Erganism[] Art [] Ecosystem[]
+    title: Erganism.Art [] co-creative[] ecosystem[]
   404:
     title: page not found
   blank:

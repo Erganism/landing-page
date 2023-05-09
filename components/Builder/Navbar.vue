@@ -87,8 +87,8 @@ const toggleOptions = (show?: boolean) => {
             >
               <span class="sr-only">home</span>
               <span class="flex items-center">
-                <IconSimpleIcons:nuxtdotjs
-                  class="inline-block mr-2 text-lg text-primary-500"
+                <BrandLogoColor
+                  class="inline-block mr-2 text-lg text-primary-500 h-6 w-6"
                 />
                 {{ app.name }}
               </span>

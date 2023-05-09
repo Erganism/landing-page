@@ -1,7 +1,7 @@
 export default defineAppConfig({
   name: 'Erganism',
   author: {
-    name: 'viandwi24',
-    link: 'https://github.com/viandwi24',
+    name: 'Erganism',
+    link: 'https://github.com/Erganism',
   },
 })

@@ -9,7 +9,7 @@ const app = useAppConfig() as AppConfigInput
 
 useHead({
   title: app.name,
-  titleTemplate: '%s - Erganism jamming marketplace',
+  titleTemplate: '%s - Erganism co-creative marketplace',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     {
@@ -18,12 +18,37 @@ useHead({
       content: 'Erganism',
     },
   ],
-  link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    {
+      href: 'logo/apple-touch-icon.png',
+      type: 'image/x-icon',
+      rel: 'apple-touch-icon',
+    },
+    {
+      href: 'logo/android-chrome-192x192.png',
+      type: 'image/x-icon',
+      rel: 'android-chrome-icon',
+    },
+    {
+      href: 'logo/android-chrome-512x512.png',
+      type: 'image/x-icon',
+      rel: 'android-chrome-icon',
+    },
+    {
+      href: 'logo/logo-32x32.png',
+      type: 'image/x-icon',
+    },
+    {
+      href: 'logo/logo-16x16.png',
+      type: 'image/x-icon',
+    },
+  ],
 })
 </script>
 
 <template>
-  <Html :class="`${theme === 'dark' ? 'dark' : ''}`" :lang="locale">
+  <Html :class="`${theme === 'dark' ? 'dark' : ''}`" lang="en">
     <Body
       class="antialiased duration-300 transition-colors text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-900 overscroll-y-none"
     >

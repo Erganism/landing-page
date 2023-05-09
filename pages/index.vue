@@ -72,7 +72,7 @@ const copyBash = () => {
               }; --end-color: ${item.endColor}; --animation-name: anim-fg-${
                 i + 1
               }`"
-              class="animated-text-bg drop-shadow-xl text-5xl xl:text-8xl 2xl:text-9xl block font-black uppercase"
+              class="animated-text-bg drop-shadow-xl text-6xl xl:text-8xl 2xl:text-8xl block font-black lowercase"
             >
               <span class="animated-text-fg">{{ item.text }}</span>
             </span>
@@ -82,17 +82,12 @@ const copyBash = () => {
           >
             <Button
               size="lg"
-              text="Nuxt 3"
               class="font-extrabold"
-              href="https://v3.nuxtjs.org"
-            />
-            <Button
-              size="lg"
-              text="Github"
               type="secondary"
-              class="font-extrabold"
-              href="https://github.com/viandwi24/nuxt3-awesome-starter"
-            />
+              href="https://discord.gg/WW6unQmyxD"
+            >
+              <IconMdi:discord class="mr-2" /> Join us on Discord</Button
+            >
           </div>
         </div>
         <div class="hidden md:flex md:w-3/8 justify-center items-end relative">

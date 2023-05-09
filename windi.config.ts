@@ -86,8 +86,9 @@ export default defineConfig({
         slate: colors.slate,
       },
       fontFamily: {
-        sans: ['Nunito', ...defaultTheme.fontFamily.sans],
-      },
+        // sans: ['Rubik', ...defaultTheme.fontFamily.sans],
+        sans: ['Mulish', ...defaultTheme.fontFamily.sans],
+      }
     },
   },
   shortcuts: {
