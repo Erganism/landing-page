@@ -21,26 +21,26 @@ useHead({
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     {
-      href: 'logo/apple-touch-icon.png',
+      href: '/logo/apple-touch-icon.png',
       type: 'image/x-icon',
       rel: 'apple-touch-icon',
     },
     {
-      href: 'logo/android-chrome-192x192.png',
+      href: '/logo/android-chrome-192x192.png',
       type: 'image/x-icon',
       rel: 'android-chrome-icon',
     },
     {
-      href: 'logo/android-chrome-512x512.png',
+      href: '/logo/android-chrome-512x512.png',
       type: 'image/x-icon',
       rel: 'android-chrome-icon',
     },
     {
-      href: 'logo/logo-32x32.png',
+      href: '/logo/logo-32x32.png',
       type: 'image/x-icon',
     },
     {
-      href: 'logo/logo-16x16.png',
+      href: '/logo/logo-16x16.png',
       type: 'image/x-icon',
     },
   ],

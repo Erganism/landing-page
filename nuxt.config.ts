@@ -4,12 +4,12 @@ import IconsResolver from 'unplugin-icons/resolver'
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   // server side rendering mode
-  ssr: true,
+  ssr: false,
 
   // typescripts
   typescript: {
     strict: true,
-    typeCheck: true,
+    typeCheck: false,
   },
 
   // css
@@ -43,6 +43,9 @@ export default defineNuxtConfig({
 
   // vite plugins
   vite: {
+      resolve: {
+        dedupe: ['vue-router']
+      },
     plugins: [
       UnpluginComponentsVite({
         dts: true,
@@ -58,8 +61,8 @@ export default defineNuxtConfig({
   // app config
   app: {
     // global transition
-    pageTransition: { name: 'page', mode: 'out-in' },
-    layoutTransition: { name: 'layout', mode: 'out-in' },
+    // pageTransition: { name: 'page', mode: 'out-in' },
+    // layoutTransition: { name: 'layout', mode: 'out-in' },
   },
 
   // localization - i18n config
@@ -102,4 +105,12 @@ export default defineNuxtConfig({
       theme: 'github-dark',
     },
   },
+  nitro: {
+    prerender: {
+      // routes: ['/sitemap.xml'],
+      ignore: [
+        '/ignore/',
+      ]
+    }
+  }
 })
