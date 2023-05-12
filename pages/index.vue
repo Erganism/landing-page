@@ -261,4 +261,9 @@ html.dark {
   visibility: visible;
   opacity: 1;
 }
+@media screen and (max-width: 480px) {
+  .animated-text-bg {
+  font-size:  clamp(12w, 2rem, 4rem);
+}
+}
 </style>

@@ -66,7 +66,7 @@ export default {
         Math.max(size * 50, 100),
         160
       )}px)`
-      mouseLight.style.opacity = Math.min(Math.max(size / 4, 0.6), 0.7)
+      mouseLight.style.opacity = Math.min(Math.max(size / 4, 0.6), 0.9)
 
       const dx = e.pageX - pointerRect.left
       const dy = e.pageY - pointerRect.top
@@ -117,9 +117,9 @@ export default {
 .dark .visual-effects .mouse-gradient {
   background: repeating-linear-gradient(
     to right,
-    #0a0a18 0%,
-    #48002ea8 50%,
-    #330147ef 100%
+    #151531 0%,
+    #720149a8 50%,
+    #59017cef 100%
   );
   filter: blur(500px);
   opacity: 1;
